@@ -1,4 +1,11 @@
-import { HeroSection, Layout, Navbar, SideMenu } from "../components";
+import {
+  HeroSection,
+  Layout,
+  Navbar,
+  NewReleases,
+  PopularSongs,
+  SideMenu,
+} from "../components";
 
 function Home() {
   return (
@@ -6,8 +13,10 @@ function Home() {
       <Navbar />
       <Layout>
         <SideMenu />
-        <div>
+        <div className="wrapper">
           <HeroSection />
+          <NewReleases />
+          <PopularSongs />
         </div>
       </Layout>
     </>

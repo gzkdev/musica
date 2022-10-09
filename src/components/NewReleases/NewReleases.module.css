@@ -1,0 +1,53 @@
+.section__heading {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 16px;
+}
+
+.carousel {
+  overflow-x: auto;
+  max-width: 1440px;
+}
+
+.carousel__list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 16px 16px;
+}
+
+.carousel__list a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.carousel__item {
+  width: 153px;
+  font-size: 12px;
+}
+
+.carousel__item .thumbnail {
+  width: 153px;
+  height: 153px;
+  border-radius: 25px;
+  background-color: #ebebeb;
+}
+
+.carousel__item .artist {
+  color: #ffffff80;
+}
+
+.carousel__item .title {
+  margin: 6px 0px 0px;
+}
+
+@media (min-width: 1000px) {
+  .section__heading {
+    font-size: 24px;
+    padding: 0px 0px;
+  }
+
+  .carousel__list {
+    padding: 16px 0px;
+  }
+}
