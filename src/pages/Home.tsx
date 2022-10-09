@@ -1,10 +1,12 @@
-import { Navbar } from "../components";
+import { Layout, Navbar, SideMenu } from "../components";
 
 function Home() {
   return (
     <>
       <Navbar />
-      {/* <h1>Musica App - Home</h1> */}
+      <Layout>
+        <SideMenu />
+      </Layout>
     </>
   );
 }
