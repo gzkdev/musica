@@ -1,0 +1,101 @@
+.navbar {
+  top: 0;
+  width: 100%;
+  position: sticky;
+  z-index: 10;
+}
+
+.navbar__ctn {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0 auto;
+  width: min(90%, 1440px);
+  padding: 16px 0px;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.navbar__logo {
+  width: 30px;
+  object-fit: contain;
+}
+
+.navbar__btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar__btn::before,
+.navbar__btn::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 50%;
+  height: 2px;
+}
+
+.navbar__btn::before {
+  transform: translate(0, -4px);
+}
+
+.navbar__btn::after {
+  transform: translate(0, 4px);
+}
+
+.navbar__search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #ffffff40;
+}
+
+.navbar__search:focus-within {
+  outline: 1px solid currentColor;
+}
+
+.search__icon {
+  position: absolute;
+}
+
+.navbar__search input {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  height: 48px;
+  padding: 0px 24px;
+}
+
+.navbar__search input:hover,
+.navbar__search input:focus {
+  border: none;
+  outline: none;
+}
+
+@media (min-width: 760px) {
+  .navbar__ctn {
+    display: grid;
+    grid-template-columns: 96px 1fr;
+  }
+
+  .navbar__btn {
+    display: none;
+  }
+}

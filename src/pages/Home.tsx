@@ -1,5 +1,12 @@
+import { Navbar } from "../components";
+
 function Home() {
-  return <div>Musica App - Home</div>;
+  return (
+    <>
+      <Navbar />
+      {/* <h1>Musica App - Home</h1> */}
+    </>
+  );
 }
 
 export default Home;
