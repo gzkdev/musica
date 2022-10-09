@@ -1,16 +1,11 @@
 import styles from "./SideBar.module.css";
 import { NavLink } from "react-router-dom";
 import {
-  Home,
-  Home2,
   Home3,
   MusicLibrary2,
   Radio,
   VideoHorizontal,
   Profile,
-  Profile2User,
-  User,
-  Logout,
   LogoutCurve,
 } from "iconsax-react";
 
@@ -72,10 +67,11 @@ function SideMenu() {
               </li>
               <li>
                 <NavLink to="/">
-                  <Logout
+                  <LogoutCurve
                     size={20}
                     className={styles.link__icon}
                     variant="Bold"
+                    style={{ transform: "rotateY(180deg)" }}
                   />
                   <span>Log out</span>
                 </NavLink>
