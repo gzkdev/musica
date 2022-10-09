@@ -22,14 +22,14 @@ function SideMenu() {
                   isActive ? { color: "#FACD66" } : { color: "inherit" }
                 }
               >
-                <Home3 size={20} className={styles.link__icon} variant="Bold" />
+                <Home3 size={18} className={styles.link__icon} variant="Bold" />
                 <span>Home</span>
               </NavLink>
             </li>
             <li>
               <NavLink to="/">
                 <MusicLibrary2
-                  size={20}
+                  size={18}
                   className={styles.link__icon}
                   variant="Bold"
                 />
@@ -38,14 +38,14 @@ function SideMenu() {
             </li>
             <li>
               <NavLink to="/">
-                <Radio size={20} className={styles.link__icon} variant="Bold" />
+                <Radio size={18} className={styles.link__icon} variant="Bold" />
                 <span>Radio</span>
               </NavLink>
             </li>
             <li>
               <NavLink to="/">
                 <VideoHorizontal
-                  size={20}
+                  size={18}
                   className={styles.link__icon}
                   variant="Bold"
                 />
@@ -58,7 +58,7 @@ function SideMenu() {
               <li>
                 <NavLink to="/">
                   <Profile
-                    size={20}
+                    size={18}
                     className={styles.link__icon}
                     variant="Bold"
                   />
@@ -68,7 +68,7 @@ function SideMenu() {
               <li>
                 <NavLink to="/">
                   <LogoutCurve
-                    size={20}
+                    size={18}
                     className={styles.link__icon}
                     variant="Bold"
                     style={{ transform: "rotateY(180deg)" }}

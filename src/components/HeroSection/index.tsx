@@ -27,7 +27,19 @@ function HeroSection() {
   return (
     <div className={styles.hero}>
       <div className={styles.hero__banner}>
-        <div></div>
+        <div className={styles.banner__ctn}>
+          <div className={styles.content}>
+            <small>Curated playlist</small>
+            <div className={styles.text__ctn}>
+              <div className={styles.heading}>R & B Hits</div>
+              <p className={styles.paragraph}>
+                All mine, Lie again, Petty call me everyday, Out of time, No
+                love, Bad habit, and so much more
+              </p>
+            </div>
+            <div className={styles.footet}></div>
+          </div>
+        </div>
       </div>
       <div className={styles.hero__toppers}>
         <div className={styles.hero__title}>Top Charts</div>
@@ -35,7 +47,7 @@ function HeroSection() {
           {TOPPERS__LIST.map((data) => (
             <li key={data.id}>
               <button className={styles.album__favbtn}>
-                <Heart size={16} />
+                <Heart size={14} />
               </button>
               <Link to="/">
                 <div className={styles.album}>
