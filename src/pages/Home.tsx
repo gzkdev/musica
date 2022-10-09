@@ -1,4 +1,4 @@
-import { Layout, Navbar, SideMenu } from "../components";
+import { HeroSection, Layout, Navbar, SideMenu } from "../components";
 
 function Home() {
   return (
@@ -6,6 +6,9 @@ function Home() {
       <Navbar />
       <Layout>
         <SideMenu />
+        <div>
+          <HeroSection />
+        </div>
       </Layout>
     </>
   );

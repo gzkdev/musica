@@ -10,8 +10,8 @@
   align-items: center;
   gap: 24px;
   margin: 0 auto;
-  width: min(90%, 1440px);
-  padding: 16px 0px;
+  max-width: 1440px;
+  padding: 16px 16px;
 }
 
 .navbar__brand {
@@ -89,7 +89,7 @@
   outline: none;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 1000px) {
   .navbar__ctn {
     display: grid;
     grid-template-columns: 96px 1fr;

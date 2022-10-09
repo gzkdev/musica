@@ -1,0 +1,144 @@
+.hero {
+  width: 100%;
+  display: grid;
+  gap: 24px;
+}
+
+.hero__banner {
+  max-width: 100%;
+  display: flex;
+  padding: 16px 16px;
+}
+
+.hero__banner > div {
+  width: 100%;
+  flex-grow: 1;
+  min-height: 375px;
+  background-color: #609eaf;
+  border-radius: 40px;
+}
+
+.hero__toppers {
+  margin-top: 48px;
+  overflow-x: auto;
+}
+
+.hero__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-inline: 16px;
+}
+
+.toppers__list {
+  max-width: 100%;
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  margin: 16px 0px;
+  overflow-x: auto;
+  padding: 24px 16px;
+}
+
+.toppers__list::-webkit-scrollbar {
+  width: 0;
+}
+
+.toppers__list li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+}
+
+.toppers__list li {
+  min-width: 323px;
+  position: relative;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 12px;
+  gap: 12px;
+  background-color: #1a1e1f;
+  border-radius: 12px;
+}
+
+.album__favbtn {
+  position: absolute;
+  top: 16px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff1c;
+  outline: none;
+  color: #facd66;
+  background: none;
+  border-radius: 50%;
+}
+
+.album__thumbnail {
+  width: 108px;
+  height: 108px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+}
+
+.album .artist {
+  margin: 6px 0 40px;
+  font-size: 12px;
+  color: #ffffff80;
+}
+
+.album .duration {
+  font-size: 14px;
+}
+
+@media (min-width: 1000px) {
+  .hero {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .hero__banner {
+    grid-column: span 7;
+    padding: 0px 0px;
+  }
+
+  .hero__title {
+    font-size: 24px;
+  }
+
+  .hero__toppers {
+    grid-column: span 5;
+    margin-top: 0px;
+  }
+
+  .toppers__list {
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 0px 0px;
+  }
+
+  .album {
+    flex-direction: row;
+    padding: 16px 16px;
+  }
+
+  .album__favbtn {
+    top: 50%;
+    right: 16px;
+    transform: translate(0, -50%);
+  }
+
+  .album__thumbnail {
+    width: 63px;
+    height: 63px;
+  }
+
+  .album .artist {
+    margin: 0px 0px;
+  }
+}

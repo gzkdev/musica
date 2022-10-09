@@ -1,11 +1,11 @@
 .layout {
-  width: min(90%, 1440px);
+  width: min(100%, 1440px);
   margin: 0 auto;
   padding: 16px 0px;
   display: grid;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 1000px) {
   .layout {
     grid-template-columns: 96px 1fr;
     gap: 24px;
