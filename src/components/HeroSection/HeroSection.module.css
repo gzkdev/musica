@@ -16,8 +16,25 @@
   flex-grow: 1;
   min-height: 480px;
   background-color: #609eaf;
+  background-image: 
+  /* linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.05)
+    ), */ url(../../assets/Vector.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 40px;
   padding: 32px 32px;
+  overflow: hidden;
+}
+
+.banner__ctn .hero__img {
+  position: absolute;
+  right: 16px;
+  top: 0;
+  height: 100%;
+  object-fit: contain;
 }
 
 .banner__ctn .content {
@@ -25,6 +42,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.banner__ctn .footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .heading {
@@ -100,10 +122,20 @@
 }
 
 .album__thumbnail {
+  position: relative;
   width: 108px;
   height: 108px;
-  background-color: #ebebeb;
   border-radius: 10px;
+  overflow: hidden;
+}
+
+.album__thumbnail img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 
 .album .artist {

@@ -16,6 +16,8 @@ import HeroIMG from "./Pexels Photo by Eric Esma.png";
 import heroSVG from "./Vector.svg";
 import Logo from "./logo.svg";
 
+import tstIMG from "./Frame 4.png";
+
 export {
   tcIMG1,
   tcIMG2,
@@ -31,4 +33,5 @@ export {
   HeroIMG,
   heroSVG,
   Logo,
+  tstIMG,
 };
