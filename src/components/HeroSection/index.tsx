@@ -1,7 +1,8 @@
 import styles from "./HeroSection.module.css";
 import { Link } from "react-router-dom";
 import { Heart } from "iconsax-react";
-import { HeroIMG, heroSVG, tcIMG1, tcIMG2, tcIMG3, tstIMG } from "../../assets";
+import { HeroIMG, tcIMG1, tcIMG2, tcIMG3, tstIMG } from "../../assets";
+import { motion } from "framer-motion";
 
 const TOPPERS__LIST = [
   {
@@ -32,13 +33,10 @@ function HeroSection() {
     <div className={styles.hero}>
       <div className={styles.hero__banner}>
         <div className={styles.banner__ctn}>
-          <img
-            src={HeroIMG}
-            className={styles.hero__img}
-            alt="Hero thumbnail"
-          />
           <div className={styles.content}>
-            <small>Curated playlist</small>
+            <motion.small initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+              Curated playlist
+            </motion.small>
             <div className={styles.text__ctn}>
               <div className={styles.heading}>R & B Hits</div>
               <p className={styles.paragraph}>
@@ -52,6 +50,14 @@ function HeroSection() {
               <div>33k Likes</div>
             </div>
           </div>
+          <motion.img
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4 }}
+            src={HeroIMG}
+            className={styles.hero__img}
+            alt="Hero thumbnail"
+          />
         </div>
       </div>
       <div className={styles.hero__toppers}>
