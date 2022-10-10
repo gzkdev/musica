@@ -1,5 +1,5 @@
 import styles from "./SideBar.module.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   Home3,
   MusicLibrary2,
@@ -16,52 +16,88 @@ function SideMenu() {
         <nav className={styles.menu__nav}>
           <ul>
             <li>
-              <Link to="/" data-active={true}>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? styles.active : undefined
+                }
+                end
+              >
                 <Home3 size={18} className={styles.link__icon} variant="Bold" />
                 <span>Home</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/collections">
+              <NavLink
+                to="/collections"
+                className={({ isActive }) =>
+                  isActive ? styles.active : undefined
+                }
+                end
+              >
                 <MusicLibrary2
                   size={18}
                   className={styles.link__icon}
                   variant="Bold"
                 />
                 <span>My Collections</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/">
+              <NavLink
+                to="/radio"
+                className={({ isActive }) =>
+                  isActive ? styles.active : undefined
+                }
+                end
+              >
                 <Radio size={18} className={styles.link__icon} variant="Bold" />
                 <span>Radio</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/">
+              <NavLink
+                to="/videos"
+                className={({ isActive }) =>
+                  isActive ? styles.active : undefined
+                }
+                end
+              >
                 <VideoHorizontal
                   size={18}
                   className={styles.link__icon}
                   variant="Bold"
                 />
                 <span>Music videos</span>
-              </Link>
+              </NavLink>
             </li>
           </ul>
           <ul>
             <ul>
               <li>
-                <Link to="/">
+                <NavLink
+                  to="/profile"
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                  end
+                >
                   <Profile
                     size={18}
                     className={styles.link__icon}
                     variant="Bold"
                   />
                   <span>Profile</span>
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/">
+                <NavLink
+                  to="/logout"
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                  end
+                >
                   <LogoutCurve
                     size={18}
                     className={styles.link__icon}
@@ -69,7 +105,7 @@ function SideMenu() {
                     style={{ transform: "rotateY(180deg)" }}
                   />
                   <span>Log out</span>
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </ul>

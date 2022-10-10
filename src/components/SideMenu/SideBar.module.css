@@ -44,7 +44,7 @@
   font-weight: bold;
 }
 
-.menu__nav ul li a[data-active="true"] {
+.menu__nav ul li .active {
   color: #facd66;
 }
 
