@@ -2,15 +2,15 @@ import tcIMG1 from "./Rectangle 17.png";
 import tcIMG2 from "./Rectangle 17-1.png";
 import tcIMG3 from "./Rectangle 17-2.png";
 
-import aIMG1 from "./Rectangle 14-1.png";
+import aIMG1 from "./Rectangle 26-2.png";
 import aIMG2 from "./Rectangle 14-2.png";
-import aIMG3 from "./Rectangle 14-3.png";
+import aIMG3 from "./Rectangle 26.png";
 import aIMG4 from "./Rectangle 14-4.png";
-import aIMG5 from "./Rectangle 14-5.png";
+import aIMG5 from "./Rectangle 26-1.png";
 import aIMG6 from "./Rectangle 14-6.png";
 import aIMG7 from "./Rectangle 14-7.png";
 
-import aIMG8 from "./Rectangle 15.png";
+import aIMG8 from "./Rectangle 26-3.png";
 
 import HeroIMG from "./Pexels Photo by Eric Esma.png";
 import heroSVG from "./Vector.svg";
