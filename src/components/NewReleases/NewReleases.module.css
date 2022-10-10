@@ -1,3 +1,7 @@
+.section {
+  overflow-x: auto;
+}
+
 .section__heading {
   font-size: 20px;
   font-weight: bold;
@@ -5,7 +9,6 @@
 }
 
 .carousel {
-  overflow-x: auto;
   max-width: 1440px;
 }
 
@@ -14,6 +17,11 @@
   list-style: none;
   gap: 30px;
   padding: 16px 16px;
+  overflow-x: auto;
+}
+
+.carousel__list::-webkit-scrollbar {
+  width: 0;
 }
 
 .carousel__list a {

@@ -14,7 +14,6 @@
   width: 100%;
   max-width: 1440px;
   display: grid;
-  margin: auto;
   height: 100%;
 }
 
@@ -22,6 +21,7 @@
   height: 100%;
   display: flex;
   gap: 64px;
+  padding: 0 16px;
   align-items: center;
   justify-content: space-between;
 }
@@ -58,7 +58,7 @@
   display: flex;
   align-items: center;
   gap: 42px;
-  margin: 0 auto;
+  width: max-content;
 }
 
 .btn__controls button {
@@ -68,12 +68,16 @@
   color: #fff;
   height: 32px;
   width: 32px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
   transition: 200ms;
+}
+
+.btn__controls button[data-mobile] {
+  display: flex;
 }
 
 .btn__controls button:active,
@@ -101,6 +105,14 @@
 
   .audio__container {
     grid-column: 2/3;
+  }
+
+  .btn__controls {
+    margin: 0 auto;
+  }
+
+  .btn__controls button {
+    display: flex;
   }
 
   .audio__volume {

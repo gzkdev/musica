@@ -27,10 +27,10 @@ function MusicPlayer() {
               <button>
                 <Previous size={18} variant="Bold" />
               </button>
-              <button data-play>
+              <button data-play data-mobile>
                 <Play size={18} variant="Bold" />
               </button>
-              <button>
+              <button data-mobile>
                 <Next size={18} variant="Bold" />
               </button>
               <button>
