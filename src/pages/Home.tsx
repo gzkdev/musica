@@ -1,6 +1,7 @@
 import {
   HeroSection,
   Layout,
+  MusicPlayer,
   Navbar,
   NewReleases,
   PopularSongs,
@@ -18,6 +19,7 @@ function Home() {
           <NewReleases />
           <PopularSongs />
         </div>
+        <MusicPlayer />
       </Layout>
     </>
   );
