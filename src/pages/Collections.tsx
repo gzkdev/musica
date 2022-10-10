@@ -7,14 +7,12 @@ import {
 
 export default function Collections() {
   return (
-    <>
-      <Layout>
-        <SideMenu />
-        <div className="wrapper">
-          <CollectionsWrapper />
-        </div>
-        <MusicPlayer />
-      </Layout>
-    </>
+    <Layout>
+      <SideMenu />
+      <div className="wrapper">
+        <CollectionsWrapper />
+      </div>
+      <MusicPlayer />
+    </Layout>
   );
 }

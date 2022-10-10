@@ -10,18 +10,15 @@ import {
 
 function Home() {
   return (
-    <>
-      {/* <Navbar /> */}
-      <Layout>
-        <SideMenu />
-        <div className="wrapper">
-          <HeroSection />
-          <NewReleases />
-          <PopularSongs />
-        </div>
-        <MusicPlayer />
-      </Layout>
-    </>
+    <Layout>
+      <SideMenu />
+      <div className="wrapper">
+        <HeroSection />
+        <NewReleases />
+        <PopularSongs />
+      </div>
+      <MusicPlayer />
+    </Layout>
   );
 }
 

@@ -68,11 +68,14 @@ function HeroSection() {
               <button className={styles.album__favbtn}>
                 <Heart size={14} />
               </button>
-              <Link to="/">
+              <Link to={`/albums/${data.id}`}>
                 <div className={styles.album}>
-                  <div className={styles.album__thumbnail}>
+                  <motion.div
+                    layoutId={`${data.id}`}
+                    className={styles.album__thumbnail}
+                  >
                     <img src={data.imgUrl} alt="Cover art" />
-                  </div>
+                  </motion.div>
                   <div className={styles.album__content}>
                     <div className={styles.title}>{data.title}</div>
                     <div className={styles.artist}>{data.artist}</div>
