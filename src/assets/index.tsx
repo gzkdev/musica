@@ -10,6 +10,8 @@ import aIMG5 from "./Rectangle 14-5.png";
 import aIMG6 from "./Rectangle 14-6.png";
 import aIMG7 from "./Rectangle 14-7.png";
 
+import aIMG8 from "./Rectangle 15.png";
+
 import HeroIMG from "./Pexels Photo by Eric Esma.png";
 import heroSVG from "./Vector.svg";
 import Logo from "./logo.svg";
@@ -25,6 +27,7 @@ export {
   aIMG5,
   aIMG6,
   aIMG7,
+  aIMG8,
   HeroIMG,
   heroSVG,
   Logo,
