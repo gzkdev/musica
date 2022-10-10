@@ -7,6 +7,7 @@ import Layout from "./Layout";
 import MusicPlayer from "./MusicPlayer";
 import CollectionsWrapper from "./Collections";
 import AlbumsHeader from "./AlbumsHeader";
+import AlbumTrackList from "./AlbumTrackList";
 
 export {
   Navbar,
@@ -15,7 +16,8 @@ export {
   NewReleases,
   PopularSongs,
   MusicPlayer,
-  Layout,
   CollectionsWrapper,
   AlbumsHeader,
+  AlbumTrackList,
+  Layout,
 };
