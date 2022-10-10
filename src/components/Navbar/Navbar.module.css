@@ -94,6 +94,7 @@
   .navbar__ctn {
     display: grid;
     grid-template-columns: 96px 1fr;
+    padding: 8px 0px;
   }
 
   .navbar__btn {
