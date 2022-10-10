@@ -2,7 +2,9 @@
   top: 0;
   width: 100%;
   position: sticky;
-  background-color: #1d2123;
+  background-color: #1d212354;
+  backdrop-filter: blur(12px);
+  background-blend-mode: exclusion;
   z-index: 10;
 }
 
