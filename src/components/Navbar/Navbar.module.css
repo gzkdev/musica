@@ -60,18 +60,16 @@
 }
 
 .navbar__search {
+  flex-grow: 1;
   position: relative;
   display: flex;
   align-items: center;
   color: #ffffff40;
 }
 
-.navbar__search:focus-within {
-  outline: 1px solid currentColor;
-}
-
 .search__icon {
   position: absolute;
+  right: 0px;
 }
 
 .navbar__search input {
@@ -84,6 +82,10 @@
   color: #fff;
   height: 48px;
   padding: 0px 24px;
+}
+
+.navbar__search input::placeholder {
+  opacity: 0;
 }
 
 .navbar__search input:hover,
@@ -101,5 +103,13 @@
 
   .navbar__btn {
     display: none;
+  }
+
+  .search__icon {
+    left: 0;
+  }
+
+  .navbar__search input::placeholder {
+    opacity: 1;
   }
 }

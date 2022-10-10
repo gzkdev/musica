@@ -2,6 +2,7 @@
   width: 100%;
   display: grid;
   gap: 24px;
+  outline: 1px solid red;
 }
 
 .hero__banner {

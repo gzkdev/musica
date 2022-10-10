@@ -15,7 +15,7 @@ function Navbar() {
           />
         </div>
         <div className={styles.navbar__search}>
-          <SearchNormal1 size={18} />
+          <SearchNormal1 size={20} className={styles.search__icon} />
           <input type="search" placeholder="Search artists" />
         </div>
       </div>
