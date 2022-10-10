@@ -1,6 +1,7 @@
 import { Play } from "iconsax-react";
 import styles from "./Collections.module.css";
 import { aIMG3, aIMG4, aIMG5, aIMG8 } from "../../assets";
+import { motion } from "framer-motion";
 
 const COLLECTIONS = [
   {
@@ -33,6 +34,15 @@ const COLLECTIONS = [
   },
 ];
 
+const px = {
+  show: { transition: { staggerChildren: 0.1 } },
+};
+
+const cx = {
+  hide: { opacity: 0.5 },
+  show: { opacity: 1 },
+};
+
 function CollectionsWrapper() {
   return (
     <div className={styles.collections}>
@@ -41,9 +51,13 @@ function CollectionsWrapper() {
         <button>Likes</button>
       </div>
       <div className={styles.collections__carousel}>
-        <ul>
+        <motion.ul variants={px} initial="hide" animate="show">
           {COLLECTIONS.map((data) => (
-            <li key={data.id}>
+            <motion.li
+              variants={cx}
+              transition={{ type: "tween" }}
+              key={data.id}
+            >
               <button className={styles.play}>
                 <Play size={18} variant="Bold" />
               </button>
@@ -55,9 +69,9 @@ function CollectionsWrapper() {
                 <div className={styles.artist}>{data.artist}</div>
               </div>
               <div className={styles.likes}>{data.likes}</div>
-            </li>
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
       </div>
     </div>
   );
