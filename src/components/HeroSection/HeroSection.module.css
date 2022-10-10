@@ -2,7 +2,6 @@
   width: 100%;
   display: grid;
   gap: 24px;
-  outline: 1px solid red;
 }
 
 .hero__banner {
@@ -36,6 +35,7 @@
   top: 0;
   height: 100%;
   object-fit: contain;
+  display: none;
 }
 
 .banner__ctn .content {
@@ -147,6 +147,12 @@
 
 .album .duration {
   font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .banner__ctn .hero__img {
+    display: block;
+  }
 }
 
 @media (min-width: 1000px) {

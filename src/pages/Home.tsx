@@ -7,8 +7,14 @@ import {
   PopularSongs,
   SideMenu,
 } from "../components";
+import { useEffect } from "react";
+import { ScrollToTop } from "../utils";
 
 function Home() {
+  useEffect(() => {
+    ScrollToTop();
+  }, []);
+
   return (
     <Layout>
       <SideMenu />

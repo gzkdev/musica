@@ -5,8 +5,14 @@ import {
   AlbumsHeader,
   AlbumTrackList,
 } from "../components";
+import { useEffect } from "react";
+import { ScrollToTop } from "../utils";
 
 function Album() {
+  useEffect(() => {
+    ScrollToTop();
+  }, []);
+
   return (
     <Layout>
       <SideMenu />

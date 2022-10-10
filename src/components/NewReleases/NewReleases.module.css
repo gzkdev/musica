@@ -1,4 +1,6 @@
 .section {
+  max-width: 100%;
+  display: grid;
   overflow-x: auto;
 }
 
@@ -9,7 +11,7 @@
 }
 
 .carousel {
-  max-width: 1440px;
+  overflow-x: auto;
 }
 
 .carousel__list {
