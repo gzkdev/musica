@@ -68,8 +68,9 @@
 }
 
 .search__icon {
-  position: absolute;
   right: 0px;
+  position: absolute;
+  pointer-events: none;
 }
 
 .navbar__search input {
