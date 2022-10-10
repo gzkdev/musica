@@ -13,6 +13,7 @@ import aIMG7 from "./Rectangle 14-7.png";
 import aIMG8 from "./Rectangle 26-3.png";
 
 import HeroIMG from "./Pexels Photo by Eric Esma.png";
+import PageBG from "./Rectangle 20.png";
 import heroSVG from "./Vector.svg";
 import Logo from "./logo.svg";
 
@@ -34,4 +35,5 @@ export {
   heroSVG,
   Logo,
   tstIMG,
+  PageBG,
 };

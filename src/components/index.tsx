@@ -6,6 +6,7 @@ import PopularSongs from "./PopularSongs";
 import Layout from "./Layout";
 import MusicPlayer from "./MusicPlayer";
 import CollectionsWrapper from "./Collections";
+import AlbumsHeader from "./AlbumsHeader";
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   MusicPlayer,
   Layout,
   CollectionsWrapper,
+  AlbumsHeader,
 };

@@ -1,4 +1,4 @@
-import { Layout, SideMenu, MusicPlayer } from "../components";
+import { Layout, SideMenu, MusicPlayer, AlbumsHeader } from "../components";
 import { useParams } from "react-router-dom";
 
 function Album() {
@@ -9,7 +9,9 @@ function Album() {
   return (
     <Layout>
       <SideMenu />
-      <div className="wrapper"></div>
+      <div className="wrapper">
+        <AlbumsHeader />
+      </div>
       <MusicPlayer />
     </Layout>
   );
