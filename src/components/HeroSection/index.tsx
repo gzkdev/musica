@@ -1,32 +1,9 @@
 import styles from "./HeroSection.module.css";
 import { Link } from "react-router-dom";
 import { Heart } from "iconsax-react";
-import { HeroIMG, tcIMG1, tcIMG2, tcIMG3, tstIMG } from "../../assets";
 import { motion } from "framer-motion";
-
-const TOPPERS__LIST = [
-  {
-    id: 0,
-    imgUrl: tcIMG1,
-    title: "Goldern age of 80s",
-    artist: "Sean swadder",
-    duration: "2:24:45",
-  },
-  {
-    id: 1,
-    imgUrl: tcIMG2,
-    title: 'Reggae "n" blues',
-    artist: "Dj YK mule",
-    duration: "1:02:42",
-  },
-  {
-    id: 2,
-    imgUrl: tcIMG3,
-    title: "Tomorrow's tunes",
-    artist: "Obi Datti",
-    duration: "2:01:25",
-  },
-];
+import { HeroIMG, tstIMG } from "../../assets";
+import { TOPPERS__LIST } from "../../data/ToppersList";
 
 function HeroSection() {
   return (

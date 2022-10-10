@@ -1,6 +1,6 @@
 import styles from "../NewReleases/NewReleases.module.css";
 import { Link } from "react-router-dom";
-import { NEW_RELEASES as POPULAR_SONGS } from "../NewReleases";
+import { NEW_RELEASES as POPULAR_SONGS } from "../../data/NewReleases";
 
 function PopularSongs() {
   return (
