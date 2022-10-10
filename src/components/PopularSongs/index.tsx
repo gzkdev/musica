@@ -1,43 +1,6 @@
 import styles from "../NewReleases/NewReleases.module.css";
 import { Link } from "react-router-dom";
-
-const POPULAR_SONGS = [
-  {
-    id: 0,
-    title: "Life in a bubble",
-    artist: "The van",
-  },
-  {
-    id: 1,
-    title: "Mountain",
-    artist: "Krisx",
-  },
-  {
-    id: 2,
-    title: "Limits",
-    artist: "John Dillion",
-  },
-  {
-    id: 3,
-    title: "Everything's black",
-    artist: "Armeed",
-  },
-  {
-    id: 4,
-    title: "Cancelled",
-    artist: "Enimen",
-  },
-  {
-    id: 5,
-    title: "Normad",
-    artist: "Makrol eli",
-  },
-  {
-    id: 6,
-    title: "Blind",
-    artist: "Wiz zee",
-  },
-];
+import { NEW_RELEASES as POPULAR_SONGS } from "../NewReleases";
 
 function PopularSongs() {
   return (
@@ -49,7 +12,9 @@ function PopularSongs() {
             <li key={data.id}>
               <Link to="/">
                 <div className={styles.carousel__item}>
-                  <div className={styles.thumbnail}></div>
+                  <div className={styles.thumbnail}>
+                    <img src={data.imgURL} alt="ALbum cover art" />
+                  </div>
                   <div className={styles.title}>{data.title}</div>
                   <div className={styles.artist}>{data.artist}</div>
                 </div>
