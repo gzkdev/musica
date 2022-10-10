@@ -5,13 +5,8 @@ import {
   AlbumsHeader,
   AlbumTrackList,
 } from "../components";
-import { useParams } from "react-router-dom";
 
 function Album() {
-  const params = useParams();
-
-  console.log(params);
-
   return (
     <Layout>
       <SideMenu />

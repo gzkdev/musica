@@ -1,17 +1,18 @@
 import { Heart, MusicSquare, Play, PlayCircle } from "iconsax-react";
 import { PageBG, tcIMG3 } from "../../assets";
 import styles from "./AlbumsHeader.module.css";
+import { motion } from "framer-motion";
+import { useParams } from "react-router-dom";
 
 function AlbumsHeader() {
+  const params = useParams();
+
   return (
     <>
-      <div className={styles.fixed__background}>
-        <img src={PageBG} alt="Background image" />
-      </div>
       <div className={styles.header}>
-        <div className={styles.header__thumbnail}>
+        <motion.div layoutId={params.id} className={styles.header__thumbnail}>
           <img src={tcIMG3} alt="Album thumbnail" />
-        </div>
+        </motion.div>
         <div className={styles.header__content}>
           <div className={styles.heading}>Tomorrow's tunes</div>
           <p className={styles.paragraph}>
@@ -34,6 +35,9 @@ function AlbumsHeader() {
             </button>
           </div>
         </div>
+      </div>
+      <div className={styles.fixed__background}>
+        <img src={PageBG} alt="Background image" />
       </div>
     </>
   );
