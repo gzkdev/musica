@@ -98,6 +98,7 @@
 
 .btn__controls button[data-play] {
   background-color: #facd66;
+  box-shadow: 0px 0px 18px rgba(255, 255, 255, 0.3);
 }
 
 .timeline__control {

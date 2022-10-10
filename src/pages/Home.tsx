@@ -11,7 +11,7 @@ import {
 function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Layout>
         <SideMenu />
         <div className="wrapper">

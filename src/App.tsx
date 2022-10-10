@@ -1,17 +1,22 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import TopCharts from "./pages/TopCharts";
+import Album from "./pages/Album";
 import Collections from "./pages/Collections";
+import { Navbar } from "./components";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/charts/:id" element={<TopCharts />} />
-        <Route path="/collections" element={<Collections />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/charts/:id" element={<Album />} />
+          <Route path="/collections" element={<Collections />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

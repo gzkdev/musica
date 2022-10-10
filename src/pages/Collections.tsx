@@ -1,3 +1,13 @@
+import { Layout, SideMenu, MusicPlayer } from "../components";
+
 export default function Collections() {
-  return <div>Musica App - Collections</div>;
+  return (
+    <>
+      <Layout>
+        <SideMenu />
+        <div className="wrapper"></div>
+        <MusicPlayer />
+      </Layout>
+    </>
+  );
 }
