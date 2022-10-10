@@ -38,7 +38,7 @@ body {
 
 input[type="range"] {
   --color: rgb(250, 205, 102);
-  --value: 20%;
+  /* --value: 20%; */
   width: 100%;
   display: block;
   height: 4px;

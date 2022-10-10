@@ -8,8 +8,12 @@ import {
   RepeateOne,
   VolumeHigh,
 } from "iconsax-react";
+import { useState } from "react";
 
 function MusicPlayer() {
+  const [time, setTime] = useState(20);
+  const [volume, setVolume] = useState(20);
+
   return (
     <div className={styles.audio}>
       <div className={styles.audio__wrapper}>
@@ -46,7 +50,9 @@ function MusicPlayer() {
                 type="range"
                 name="timeline"
                 id="timeline"
-                value="20"
+                value={time}
+                style={{ "--value": `${time}%` } as React.CSSProperties}
+                onChange={(e) => setTime(+e.target.value)}
                 min="0"
                 max="100"
               />
@@ -61,6 +67,8 @@ function MusicPlayer() {
               name="volume"
               id="volume"
               value="20"
+              style={{ "--value": `${volume}%` } as React.CSSProperties}
+              onChange={(e) => setVolume(+e.target.value)}
               min="0"
               max="100"
             />
