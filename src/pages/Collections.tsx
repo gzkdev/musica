@@ -6,9 +6,13 @@ import {
 } from "../components";
 import { useEffect } from "react";
 import { ScrollToTop } from "../utils";
+import { AppContextStore } from "../context/AppContext";
 
 export default function Collections() {
+  const { setIsNavOpen } = AppContextStore();
+
   useEffect(() => {
+    setIsNavOpen?.(false);
     ScrollToTop();
   }, []);
 

@@ -3,6 +3,7 @@ import { createContext, useContext, useState } from "react";
 interface contextInterface {
   isNavOpen: boolean;
   toggleIsNavOpen: () => void;
+  setIsNavOpen: (value: React.SetStateAction<boolean>) => void;
 }
 
 const AppContext = createContext<contextInterface | null>(null);
@@ -19,7 +20,7 @@ export const AppContextProvider = ({ children }: Prop) => {
   };
 
   return (
-    <AppContext.Provider value={{ isNavOpen, toggleIsNavOpen }}>
+    <AppContext.Provider value={{ isNavOpen, toggleIsNavOpen, setIsNavOpen }}>
       {children}
     </AppContext.Provider>
   );

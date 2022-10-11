@@ -7,9 +7,13 @@ import {
 } from "../components";
 import { useEffect } from "react";
 import { ScrollToTop } from "../utils";
+import { AppContextStore } from "../context/AppContext";
 
 function Album() {
+  const { setIsNavOpen } = AppContextStore();
+
   useEffect(() => {
+    setIsNavOpen?.(false);
     ScrollToTop();
   }, []);
 

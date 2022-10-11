@@ -95,6 +95,11 @@
     height: fit-content;
   }
 
+  .close__btn {
+    display: none;
+    pointer-events: none;
+  }
+
   .menu__nav {
     height: 100%;
   }
