@@ -3,10 +3,11 @@ import Home from "./pages/Home";
 import Album from "./pages/Album";
 import Collections from "./pages/Collections";
 import { Navbar } from "./components";
+import { AppContextProvider } from "./context/AppContext";
 
 function App() {
   return (
-    <>
+    <AppContextProvider>
       <Navbar />
       <BrowserRouter>
         <Routes>
@@ -16,7 +17,7 @@ function App() {
           <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </AppContextProvider>
   );
 }
 

@@ -8,10 +8,13 @@ import {
   Profile,
   LogoutCurve,
 } from "iconsax-react";
+import { AppContextStore } from "../../context/AppContext";
 
 function SideMenu() {
+  const { isNavOpen, toggleIsNavOpen } = AppContextStore();
   return (
-    <div className={styles.menu}>
+    <div className={styles.menu} data-active={isNavOpen}>
+      <button className={styles.close__btn} onClick={toggleIsNavOpen}></button>
       <div className={styles.menu__ctn}>
         <nav className={styles.menu__nav}>
           <ul>
